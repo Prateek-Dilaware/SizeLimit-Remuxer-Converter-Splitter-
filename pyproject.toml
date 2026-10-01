@@ -1,0 +1,18 @@
+[project]
+name = "mkv-to-mp4"
+version = "0.1.0"
+description = "A fast, automated Python utility powered by FFmpeg for batch-converting video files into standard .mp4 format."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+authors = [
+  { name = "mkv-to-mp4 contributors" }
+]
+keywords = ["ffmpeg", "video-converter", "video-splitter", "remuxer", "auto-split", "mkv-to-mp4", "batch-convert"]
+
+[project.scripts]
+mkv-to-mp4 = "mkv_to_mp4:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
